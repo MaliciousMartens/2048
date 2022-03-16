@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+/**************************TAG STYLES***********************************/
+body {
+  margin: 0;
+  background-color: #6FB2D2;
+  font-family: Helvetica, sans-serif;
+}
+
+
+/**************************TITLE***********************************/
+.title h1 {
+  font-family:Helvetica, sans-serif;
+  color: black;
+  font-size: 5rem;
+  text-align: center;
+}
+
+
+
+/**************************BOARD***********************************/
+.wrapper {
+  margin: 7% auto;
+}
+
+.board {
+  width:400px;
+  display: grid;
+  margin: 0 auto;
+  /* border: 49px solid #462921; */
+  grid-template-columns: 100px 100px 100px 100px ;
+  grid-template-rows: 100px 100px 100px 100px ;
+  grid-template-areas:
+  "a b c d"
+  "e f g h"
+  "i j k l"
+  "m n o p";
+  grid-gap: 3px;
+}
+
+/**************************BOARD ITEMS***********************************/
+/* unmovable board */
+.board-unit {
+  border: 3px solid black;
+  border-radius: 10%;
+  background-color: #EBD671;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* board unit # is the 'movable' element on the board */
+.board-unit1 {
+  border: 3px solid black;
+  border-radius: 10%;
+  background-color: #85C88A;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-unit_a,
+.board-unit_a1 {
+  grid-area: a;
+}
+
+.board-unit_b,
+.board-unit_b1 {
+  grid-area: b;
+}
+
+.board-unit_c,
+.board-unit_c1  {
+  grid-area: c;
+}
+
+
+.board-unit_d,
+.board-unit_d1 {
+  grid-area: d;
+}
+
+.board-unit_e,
+.board-unit_e1 {
+  grid-area: e;
+}
+
+.board-unit_f,
+.board-unit_f1 {
+  grid-area: f;
+}
+
+.board-unit_g,
+.board-unit_g1  {
+  grid-area: g;
+}
+
+.board-unit_h,
+.board-unit_h1 {
+  grid-area: h;
+}
+
+.board-unit_i,
+.board-unit_i1  {
+  grid-area: i;
+}
+.board-unit_j,
+.board-unit_j1 {
+  grid-area: j;
+}
+.board-unit_k,
+.board-unit_k1 {
+  grid-area: k;
+}
+.board-unit_l,
+.board-unit_l1 {
+  grid-area: l;
+}
+
+.board-unit_m,
+.board-unit_m1 {
+  grid-area: m;
+}
+.board-unit_n,
+.board-unit_n1 {
+  grid-area: n;
+}
+.board-unit_o,
+.board-unit_o1 {
+  grid-area: o;
+}
+.board-unit_p,
+.board-unit_p1 {
+  grid-area: p;
+}
+
+/**************************TILES***********************************/
+.tiles {
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 10%;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 100;
+}
+.two {
+  background-color: #EBD671;
+}
+
+.four {
+  background-color: #ebb671;
+}
+
+.eight {
+  background-color: #eb8971;
+}
+
+.sixteen {
+  background-color: #eb7185;
+}
+
+.thirtyTwo {
+  background-color: #eb71c2; 
+}
+
+.sixtyFour {
+  background-color: #dd71eb; 
+}
+
+.oneHundredTwentyEight {
+  background-color: #a671eb;
+}
+
+.twoHundredFiftySix {
+  background-color: #7173eb; 
+}
+
+.fiveHundredTwelve {
+  background-color: #71cfeb; 
+}
+
+.oneThousandTwentyFour {
+  background-color: #71ebb2; 
+}
+
+.twoThousandFortyEight {
+  background-color: #7feb71; 
+}
+
+/**************************FOOTER***********************************/
+footer {
+background-color: #85C88A;
+color: black;
+font-size: 1rem;
+text-align: center;
+padding: 2rem;
+margin-top: 11rem;
+}
+
